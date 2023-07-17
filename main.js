@@ -46,14 +46,14 @@ const carousel = () => {
 	let i;
 	for (i = 0; i < backgroundImgs.length; i++) {
 		// backgroundImgs[i].style.display = 'none';
-		backgroundImgs[i].style.opacity = "0";
+		backgroundImgs[i].style.opacity = '0';
 	}
 	slideIndex++;
 	if (slideIndex > backgroundImgs.length) {
 		slideIndex = 1;
 	}
 	// backgroundImgs[slideIndex-1].style.display = 'block';
-	backgroundImgs[slideIndex - 1].style.opacity = "1";
+	backgroundImgs[slideIndex - 1].style.opacity = '1';
 	setTimeout(carousel, 6000);
 };
 
